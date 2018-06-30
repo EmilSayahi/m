@@ -7,10 +7,10 @@
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
 
-{% elsif page.title and page.url != "/" %}
+{% elsif page.title == true and page.url != "/" %}
   <title>{{ site.name }} - {{ page.title }}</title>
 
-{% else %}
+{% elsif page.title == '' and page.url != "/" %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
 {% endif %}
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
