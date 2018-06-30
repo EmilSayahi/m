@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">  
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
-{% ifelse page.title and page.url != "/" %}
+{% elseif page.title and page.url != "/" %}
   <title>{{ site.name }} - {{ page.title }}</title>
 {% else %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
