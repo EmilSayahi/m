@@ -1,0 +1,13 @@
+<i>Emil liked </i>"
+<p>
+"
+<script>
+$.ajax({
+      url: "http://textance.herokuapp.com/title/{{ page.mf-like-of }}",
+      complete: function(data) {
+        document.write(data.responseText);
+      }
+});
+</script>
+"
+</p>
