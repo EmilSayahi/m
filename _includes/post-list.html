@@ -15,7 +15,7 @@
                 {% endif %}
                 
                 </h2></a>
-            <aside class="dates"><time datetime="{{ post.date }}" class="dt-published">{{ post.date | date:"%I:%M %p, %b %d" }}</time></aside>
+            <aside class="dates"><time datetime="{{ post.date }}" class="dt-published"><span class="arrow">→</span> {{ post.date | date:"%I:%M %p, %b %d" }}</time></aside>
         </li>
     {% endfor %}
 </ul>
