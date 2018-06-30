@@ -14,15 +14,6 @@ archive: true
                 {% if page.title == '' %}
                 {{ content }}
                 {% endif %}
-                {% if page.microblog == true %}
-                {{ content }}
-                {% endif %}
-                {% if page.microblog == false %}
-                {{ page.title }}
-                {{ content }}
-	    	{% else %}
-	    	{{ content }}
-                {% endif %}
     </section>
 </article>
 <footer id="post-meta" class="clearfix">
