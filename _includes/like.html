@@ -1,13 +1,14 @@
 {% if page.mf-like-of %}
 <i>Emil liked </i>"
 <p>
-<script>
-$.ajax({
-      url: "http://textance.herokuapp.com/rest/title/{{ page.mf-like-of | url_encode }}",
-      complete: function(data) {
-        document.write(data.responseText);
-      }
-});
-</script>
+		<script>
+		$.ajax({
+			var encoded = encodeURIComponent("{{ post.mf-like-of }}");
+		      url: "http://textance.herokuapp.com/rest/title/" + encoded,
+		      complete: function(data) {
+			document.write(data.responseText);
+		      }
+		});
+		</script>
 </p>
 {% endif %}
