@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">  
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
-{% endif %}
-{% if page.title and page.url != "/" %}
+
+{% elsif page.title and page.url != "/" %}
   <title>{{ site.name }} - {{ page.title }}</title>
-{% endif %}
-{% if page.url != "/" and page.title='' %}
+
+{% else %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
 {% endif %}
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
