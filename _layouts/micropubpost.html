@@ -16,14 +16,10 @@ archive: true
 	    	{% else %}
 	    	{{ content }}
                 {% endif %}
-	    	{% if page.mf-photo is empty %}
-	    
-	    	{% else %}
+	    	{% if page.mf-photo != '' %}
 	    	{% include insta.html %}
 	    	{% endif %}
-	    	{% if page.mf-like-of is empty %}
-	    
-	    	{% else %}
+	    	{% if page.mf-like-of != '' %}
 	    	{% include like.html %}
 	    	{% endif %}
 	    
