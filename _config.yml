@@ -46,7 +46,7 @@ full_name: "Emil Sayahi"
 bio: ""
 twitter_username: "emilsayahi"
 github_username: "emilsayahi"
-instagram_username: ""
+instagram_username: "https://www.instagram.com/emilsayahi/"
 paginate: 20
 paginate_path: "/page/:num/"
 timezone: "America/New_York"
