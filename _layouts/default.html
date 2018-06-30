@@ -7,7 +7,7 @@
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
 
-{% elsif page.title == true and page.url != "/" %}
+{% elsif page.title != '' and page.url != "/" %}
   <title>{{ site.name }} - {{ page.title }}</title>
 
 {% elsif page.title == '' and page.url != "/" %}
