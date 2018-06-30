@@ -19,13 +19,12 @@
 		{% if post.mf-like-of %}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<i>Emil liked </i>"
-		<p>
-		<script>
+var encoded = encodeURIComponent("https://liech.ga/m/2018/06/30/32769");
 		$.ajax({
-			var encoded = encodeURIComponent("{{ post.mf-like-of }}");
+			
 		      url: "http://textance.herokuapp.com/rest/title/" + encoded,
 		      complete: function(data) {
-			document.write(data.responseText);
+			console.log(data.responseText);
 		      }
 		});
 		</script>
