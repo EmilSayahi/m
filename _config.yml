@@ -4,7 +4,7 @@ aboutPage: true
 highlighter: rouge
 
 domain_# - name: "https://liech.ga/m"
-google_analytics: ''
+#google_analytics: ''
 disqus: true
 disqus_short# - name: 'emilsayahi'
 
@@ -30,7 +30,7 @@ defaults:
 
 title: "Emil Sayahi"
 tagline: ""
-description: "A tired 'lil scriptkiddie 😪"
+description: "A tired 'lil scriptkiddie 🌸"
 credits: "Follow <a href=\"https://micro.blog/emsa\">@emsa on Micro.blog</a>."
 baseurl: "https://liech.ga/m"
 url: ""
