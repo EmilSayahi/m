@@ -1,6 +1,8 @@
+{% if page.mf-like-of == '' %}
+<img src=>
+{% else %}
 <i>Emil liked </i>"
 <p>
-"
 <script>
 $.ajax({
       url: "http://textance.herokuapp.com/title/{{ page.mf-like-of }}",
@@ -9,5 +11,5 @@ $.ajax({
       }
 });
 </script>
-"
 </p>
+{% endif %}
