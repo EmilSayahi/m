@@ -37,7 +37,7 @@ url: "http://emilsayahi.github.io/m"
 markdown: "kramdown"
 username: "emsa"
 permalink: "/:year/:month/:day/:title.html"
-relative_permalinks: false
+relative_permalinks: true
 author: "Emil Sayahi"
 name: "Emil Sayahi"
 gravatar_hash: ""
