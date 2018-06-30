@@ -16,12 +16,12 @@ archive: true
 	    	{% else %}
 	    	{{ content }}
                 {% endif %}
-	    	{% if post.mf-photo == '' %}
+	    	{% if page.mf-photo == '' %}
 	    
 	    	{% else %}
 	    	{% include insta.html %}
 	    	{% endif %}
-	    	{% if post.mf-like-of == '' %}
+	    	{% if page.mf-like-of == '' %}
 	    
 	    	{% else %}
 	    	{% include like.html %}
