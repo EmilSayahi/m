@@ -16,20 +16,21 @@
                 {% if post.mf-photo %}
 		<a href="{{ post.mf-syndication }}"><img src="{{ post.mf-photo }}"></a>
 	    	{% endif %}
-		{% if post.mf-like-of %}
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<i>Emil liked </i>"
-var encoded = encodeURIComponent("https://liech.ga/m/2018/06/30/32769");
+{% if page.mf-like-of %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<i>Emil liked </i>"
+<p>
+var encoded = encodeURIComponent("{{ page.mf-like-of }}");
 		$.ajax({
 			
 		      url: "http://textance.herokuapp.com/rest/title/" + encoded,
 		      complete: function(data) {
-			console.log(data.responseText);
+			document.write(data.responseText);
 		      }
 		});
-		</script>
-		</p>
-		{% endif %}
+</p>
+{% endif %}
+
                 
                 </h2></a>
             <aside class="dates"><time datetime="{{ post.date }}" class="dt-published"><span class="arrow">→</span> {{ post.date | date:"%I:%M %p, %b %d" }}</time></aside>
