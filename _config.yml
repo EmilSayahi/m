@@ -4,7 +4,7 @@ aboutPage: true
 highlighter: rouge
 
 domain_# - name: "https://liech.ga/m"
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: ''
 disqus: true
 disqus_short# - name: 'emilsayahi'
 
@@ -43,12 +43,11 @@ name: "Emil Sayahi"
 gravatar_hash: ""
 avatar: "https://micro.blog/emsa/avatar.jpg"
 full_name: "Emil Sayahi"
-bio: ""
+bio: "A tired 'lil scriptkiddie 😪"
 twitter_username: "emilsayahi"
 github_username: "emilsayahi"
 instagram_username: ""
 paginate: 20
 paginate_path: "/page/:num/"
 timezone: "America/New_York"
-#site_id: "2288"
 disqus_short: "emilsayahi"
