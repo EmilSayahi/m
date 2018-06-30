@@ -3,7 +3,7 @@ aboutPage: true
 # - markdown: redcarpet
 highlighter: rouge
 
-domain_# - name: "http://emilsayahi.github.io/m/"
+domain_# - name: "http://emilsayahi.github.io/m"
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: true
 disqus_short# - name: 'emilsayahi'
@@ -33,7 +33,7 @@ tagline: ""
 description: "Follow <a href=\"https://micro.blog/emsa\">@emsa on Micro.blog</a>."
 credits: "Follow <a href=\"https://micro.blog/emsa\">@emsa on Micro.blog</a>."
 baseurl: ""
-url: "http://emilsayahi.github.io/m/"
+url: "http://emilsayahi.github.io/m"
 markdown: "kramdown"
 username: "emsa"
 permalink: "/:year/:month/:day/:title.html"
