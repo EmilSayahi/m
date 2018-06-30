@@ -11,16 +11,16 @@ archive: true
         <h2 class="headline"><time class="dt-published" datetime="{{ page.date }}">{{ page.date | date:"%B %-d, %Y" }}</time></h2>
     </header>
     <section id="post-body e-content">
+	    	{% if page.mf-photo == '' %}
+	    	{% else %}
+	    	{% include insta.html %}
+	    	{% endif %}
+	    
 	    	{% if page.microblog == true %}
                 {{ content }}
 	    	{% else %}
 	    	{{ content }}
                 {% endif %}
-	    
-	    	{% if page.mf-photo == '' %}
-	    	{% else %}
-	    	{% include insta.html %}
-	    	{% endif %}
 	    
     </section>
 </article>
