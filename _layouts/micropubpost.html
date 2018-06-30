@@ -12,9 +12,12 @@ archive: true
     </header>
     <section id="post-body e-content">
         {{content}}
+	    {% if post.mf-photo == '' %}
 	    
+	    {% else %}
 	    {% include insta.html %}
 	    
+	    {% endif %}
     </section>
 </article>
 <footer id="post-meta" class="clearfix">
