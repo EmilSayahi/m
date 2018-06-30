@@ -13,6 +13,11 @@
                 {{ post.title }}
                 {{ post.content }}
                 {% endif %}
+                {% if post.mf-photo %}
+	    	    {% include insta.html %}
+	    	    {% else %}
+	    	
+	    	    {% endif %}
                 
                 </h2></a>
             <aside class="dates"><time datetime="{{ post.date }}" class="dt-published"><span class="arrow">→</span> {{ post.date | date:"%I:%M %p, %b %d" }}</time></aside>
