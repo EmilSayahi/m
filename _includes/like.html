@@ -3,7 +3,7 @@
 <p>
 <script>
 $.ajax({
-      url: "http://textance.herokuapp.com/rest/title/{{ page.mf-like-of }}",
+      url: "http://textance.herokuapp.com/rest/title/{{ page.mf-like-of | url_encode }}",
       complete: function(data) {
         document.write(data.responseText);
       }
