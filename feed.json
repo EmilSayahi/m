@@ -4,8 +4,8 @@ layout: null
 {
 	"version": "https://jsonfeed.org/version/1",
 	"title": {{ site.name | jsonify }},
-	"home_page_url": "{{ site.url }}/",
-	"feed_url": "{{ site.url }}/feed.json",
+	"home_page_url": "{{ site.baseurl }}/",
+	"feed_url": "{{ site.baseurl }}/feed.json",
 	"items": [
 		{% for post in site.posts limit:10 %}
 		{
