@@ -50,4 +50,5 @@ instagram_username: ""
 paginate: 20
 paginate_path: "/page/:num/"
 timezone: "America/New_York"
-site_id: "2288"
+#site_id: "2288"
+disqus_short: "emilsayahi"
