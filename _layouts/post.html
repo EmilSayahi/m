@@ -11,11 +11,15 @@ archive: true
         <h2 class="headline"><time class="dt-published" datetime="{{ page.date }}">{{ page.date | date:"%B %-d, %Y" }}</time></h2>
     </header>
     <section id="post-body e-content">
-                {% if page.title == '' %}
-                {{ content }}
-                {% else %}
-                {{ page.title }}
-                {{ content }}
+                {% if post.title == '' %}
+                {{ post.content }}
+                {% endif %}
+                {% if post.microblog == true %}
+                {{ post.content }}
+                {% endif %}
+                {% if post.microblog == false %}
+                {{ post.title }}
+                {{ post.content }}
                 {% endif %}
     </section>
 </article>
