@@ -6,8 +6,12 @@
                 {% if post.title == '' %}
                 {{ post.content }}
                 {% else %}
+                {% if post.microblog %}
+                {{ post.content }}
+                {% else %}
                 {{ post.title }}
                 {{ post.content }}
+                {% endif %}
                 {% endif %}
                 </h2></a>
             <aside class="dates"><time datetime="{{ post.date }}" class="dt-published">{{ post.date | date:"%I:%M %p, %b %d" }}</time></aside>
