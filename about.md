@@ -5,6 +5,6 @@ layout: page
 order: 0
 ---
 
-This is my microblog. These posts are meant to be the ones that go up on micro.blog, to keep my other blogs separate from micro.blog.
+I'm a 'lil scriptkiddie in Ohio. I'm usually very tired, so please excuse my lack of comprehensiveness.
 
 {% include footer.html %}
