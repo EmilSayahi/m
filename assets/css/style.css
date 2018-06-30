@@ -388,9 +388,9 @@ Post List
 }
 
 #post-list a {
-	color: #333;
+	color: #5badf0;
 	display: block;
-	font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	//font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
 }
 
 #post-list .dates {
@@ -399,7 +399,7 @@ Post List
 	top: 1px;
 	font: 300 16px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
 	color: #bbb;
-	padding-left: 20px;
+	//padding-left: 20px;
 }
 
 #post-list-footer {
