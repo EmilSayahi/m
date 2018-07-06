@@ -1,5 +1,5 @@
+{{ page.mf-summary }}
 <!-- The 'readapi_automator.js' script requires jQuery -->
 <script src="http://www.archive.org/includes/jquery-1.6.1.min.js"></script>
-<img src="http://covers.openlibrary.org/b/isbn/{{ page.mf-summary | split: ' ' | last | remove: '"]' }}-L.jpg">
-<div class="ol_readapi_book" isbn="{{ page.mf-summary | split: ' ' | last | remove: '"]' }}"></div>
-{{ page.mf-summary }}
+<img style="width: auto;" src="http://covers.openlibrary.org/b/isbn/{{ page.mf-summary | split: ' ' | last | remove: '"]' }}.jpg">
+<div style="width: auto;" class="ol_readapi_book" isbn="{{ page.mf-summary | split: ' ' | last | remove: '"]' }}"></div>
