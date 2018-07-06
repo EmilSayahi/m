@@ -13,7 +13,7 @@
 {% elsif page.title == '' and page.url != "/" %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
   
-{% if page.sum != '' %}
+{% elsif page.sum != '' %}
   <title>{{ site.name }} - {{ page.sum }}</title>
   
 {% endif %}
