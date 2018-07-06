@@ -16,8 +16,10 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}
-          <p><a href="{{ page.mf-syndication }}"><img src="{{ page.mf-photo }}"></a></p>
         </description>
+        <content type="html">
+          {% include insta.html %}
+        </content>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}</link>
         <guid isPermaLink="true">{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}</guid>
