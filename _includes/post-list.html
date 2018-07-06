@@ -13,6 +13,9 @@
                 {% if post.mf-photo %}
 		<a href="{{ post.mf-syndication }}"><img src="{{ post.mf-photo }}"></a>
 	    	{% endif %}
+		{% if page.mf-summary !+'' %}
+	    	{{ mf-summary }}
+	    	{% endif %}
                 
                 </h2></a>
             <aside class="dates"><time datetime="{{ post.date }}" class="dt-published"><span class="arrow">→</span> {{ post.date | date:"%I:%M %p, %b %d" }}</time></aside>
