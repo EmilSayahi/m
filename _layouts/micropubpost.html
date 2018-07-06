@@ -22,8 +22,9 @@ archive: true
 	    	{% include insta.html %}
 	    	{% endif %}
 	    	    
-	    	{% if page.mf-summary != '' %}
+	    	{% if page.mf-summary != nil %}
 	    	{{ mf-summary }}
+	    	{% include book.html %}
 	    	{% endif %}
 	    
     </section>
