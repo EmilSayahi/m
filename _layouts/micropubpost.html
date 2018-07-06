@@ -22,6 +22,10 @@ archive: true
 	    	{% include insta.html %}
 	    	{% endif %}
 	    	    
+	    	{% if page.mf-summary !+'' %}
+	    	{{ mf-summary }}
+	    	{% endif %}
+	    
     </section>
 </article>
 <footer id="post-meta" class="clearfix">
