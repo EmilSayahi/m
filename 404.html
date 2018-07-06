@@ -1,4 +1,5 @@
 <style>
+    
 .centered {
   position: fixed;
   top: 50%;
@@ -7,6 +8,19 @@
   transform: translate(-50%, -50%);
 }
 
+.active {
+  //pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+    text-decoration-color: inherit;
+    text-decoration-style: inherit;
+  //color: black;
+}     
+    
+a:link, a:visited, a:hover, a:active{
+   //color:black
+}
+    
 .background-image {
     position: fixed;
     left: 0;
@@ -48,20 +62,20 @@ h2 {
 
 <head>
     
-<title>Ya sure done messed up now, kid!</title>
+<title>Beat it! Now scram!</title>
 
 </head>
 
 <!--<div class="background-image"></div>-->
 
 <body class="centered">
-<h1 id="warn" style="
+<h1 id="warn" class="active" style="
     text-align:center;
     display:flex;
     justify-content:center;
     align-items:center
     margin:0 auto;
-    ">Oh no...</h1>
+    "><a class="active" id="warn" href="/">Oh no...</a></h1>
     <br>
 <h2 style="
     text-align:center;
@@ -70,10 +84,16 @@ h2 {
     align-items:center
     margin:0 auto;">Either something's gone or you're a little dumb kid, ain'tcha? Well … ain'tcha‽</h2>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"></script>    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    
 <script>
 var colors = ['#222', '#666', 'rgb(255,59,48)', 'rgb(255,149,0)', 'rgb(255,204,0)', 'rgb(76,217,100)', 'rgb(90,200,250)', 'rgb(0,122,255)', 'rgb(88,86,214)', 'rgb(255,45,85)'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 document.getElementById('warn').style.color = randomColor;
+//document.getElementsByClassName('active').style.color = randomColor;
+$('a:link, a:visited, a:hover, a:active').css('color', randomColor);
 </script>
     
 </body>
