@@ -11,8 +11,13 @@ archive: true
         <h2 class="headline"><time class="dt-published" datetime="{{ page.date }}">{{ page.date | date:"%B %-d, %Y" }}</time></h2>
     </header>
     <section id="post-body e-content">
-	    	{{ content }}
-                {% include photos.html %}	    
+	    
+	    	{% if page.mf-photo != '' %}
+	    	{% include insta.html %}
+	    	{% endif %}
+	    
+                {{ content }}
+	    
     </section>
 </article>
 <footer id="post-meta" class="clearfix">
