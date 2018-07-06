@@ -4,9 +4,9 @@
   <script src="http://www.archive.org/includes/jquery-1.6.1.min.js"></script>
 </head>
 <body>
-	<img src="http://covers.openlibrary.org/b/isbn/{{ post.mf-read-of.properties.uid | remove: "isbn:" }}-L.jpg">
-	<div class="ol_readapi_book" isbn="{{ post.mf-read-of.properties.uid | remove: "isbn:" }}"></div>
+	<img src="http://covers.openlibrary.org/b/isbn/{{ page.mf-read-of.properties.uid | remove: "isbn:" }}-L.jpg">
+	<div class="ol_readapi_book" isbn="{{ page.mf-read-of.properties.uid | remove: "isbn:" }}"></div>
 	{{ page.mf-summary }}
-<script src="readapi_automator.js"></script>
+<script src="https://github.com/internetarchive/read_api_extras/raw/gh-pages/readapi_automator.js"></script>
 </body>
 </html>
