@@ -2,7 +2,7 @@
 My microblog for my [micro.blog](https://micro.blog/emsa) page.
 
 ## Theme
-This site uses Carl Brown's port of the Cactus theme to Jekyll.
+This site uses micro.blog's port of the Cactus theme to Jekyll.
 
 ## Copyright & License
 
