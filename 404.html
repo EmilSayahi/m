@@ -47,13 +47,9 @@ h2 {
 </style>
 
 <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"</script>
+    
+<title>Ya sure done messed up now, kid!</title>
 
-<script>
-var colors = ['rgb(255,59,48)', 'rgb(255,149,0)', 'rgb(255,204,0)', 'rgb(76,217,100)', 'rgb(90,200,250)', 'rgb(0,122,255)', 'rgb(88,86,214)', 'rgb(255,45,85)'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
-$('#warn').css('color', randomColor);
-</script>
 </head>
 
 <!--<div class="background-image"></div>-->
@@ -73,6 +69,13 @@ $('#warn').css('color', randomColor);
     justify-content:center;
     align-items:center
     margin:0 auto;">Either something's gone or you're a little dumb kid, ain'tcha? Well … ain'tcha‽</h2>
+
+<script>
+var colors = ['#222', '#666', 'rgb(255,59,48)', 'rgb(255,149,0)', 'rgb(255,204,0)', 'rgb(76,217,100)', 'rgb(90,200,250)', 'rgb(0,122,255)', 'rgb(88,86,214)', 'rgb(255,45,85)'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
+document.getElementById('warn').style.color = randomColor;
+</script>
+    
 </body>
 <!--
 R rgb(255,59,48)
