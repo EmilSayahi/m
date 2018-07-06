@@ -16,7 +16,7 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description type="html">{{ post.content | xml_escape }}
-        <img src="{{ page.mf-photo }}">
+          <p><a href="{{ page.mf-syndication }}"><img src="{{ page.mf-photo }}"></a></p>
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}</link>
