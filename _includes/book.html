@@ -2,8 +2,11 @@
   <!-- The 'readapi_automator.js' script requires jQuery -->
   <script src="http://www.archive.org/includes/jquery-1.6.1.min.js"></script>
 </head>
+<body>
 <section>
 	{% include image.html image="http://covers.openlibrary.org/b/isbn/{{ post.mf-read-of.properties.uid | remove: "isbn:" }}-L.jpg" %}
 	<div class="ol_readapi_book" isbn="{{ post.mf-read-of.properties.uid | remove: "isbn:" }}"></div>
 	{{ post.mf-summary }}
 </section>
+<script src="readapi_automator.js"></script>
+</body>
