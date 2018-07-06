@@ -12,10 +12,10 @@ archive: true
     </header>
     <section id="post-body e-content">
 	        
-                {{ content | append: {% include insta.html %} }}
+                {{ content }}
 	    
 	    	{% if page.mf-photo != '' %}
-	    	
+	    	{% include insta.html %}
 	    	{% endif %}
 	    	    
 	    	{% if page.mf-summary != nil %}
