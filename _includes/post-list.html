@@ -10,11 +10,11 @@
 		{% else %}
 		{{ post.content }}
 		{% endif %}
-                {% if post.mf-photo %}
+                {% if post.mf-photo != nil %}
 		<a href="{{ post.mf-syndication }}"><img src="{{ post.mf-photo }}"></a>
 	    	{% endif %}
-		{% if page.mf-summary != '' %}
-	    	{{ mf-summary }}
+		{% if post.mf-summary != nil %}
+	    	{{ post.mf-summary }}
 	    	{% endif %}
                 
                 </h2></a>
