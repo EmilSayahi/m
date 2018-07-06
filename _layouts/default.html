@@ -8,10 +8,10 @@
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
 {% endif %}
-{% if page.title %}
+{% if page.title != '' %}
   <title>{{ site.name }} - {{ page.title }}</title>
 {% endif %}
-{% if page.sum %}
+{% if page.sum != nil %}
   <title>{{ site.name }} - {{ page.sum }}</title>
 {% else %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
