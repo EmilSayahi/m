@@ -1,6 +1,6 @@
 <section>
-{% for page in site.categories.social %}
-{% if page.mf-photo != nil %}
+{% for post in site.categories.social %}
+{% if post.mf-photo != nil %}
   {% include insta.html %}
 {% endif %}
 {% endfor %}
