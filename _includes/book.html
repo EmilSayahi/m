@@ -1,5 +1,11 @@
+<section style="
+ margin:0 auto;
+ display:flex;
+ justify-content:center;
+ align-items:center;" >
 {{ page.mf-summary }}
 <!-- The 'readapi_automator.js' script requires jQuery -->
 <script src="http://www.archive.org/includes/jquery-1.6.1.min.js"></script>
 <img style="width: auto;" src="http://covers.openlibrary.org/b/isbn/{{ page.mf-summary | split: ' ' | last | remove: '"]' }}.jpg">
 <div style="width: 101px;height: 21px;" class="ol_readapi_book" isbn="{{ page.mf-summary | split: ' ' | last | remove: '"]' }}"></div>
+</section>
