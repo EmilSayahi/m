@@ -12,11 +12,7 @@ archive: true
     </header>
     <section id="post-body e-content">
 	        
-	    	{% if page.microblog == true %}
                 {{ content }}
-	    	{% else %}
-	    	{{ content }}
-		{% endif %}
 	    
 	    	{% if page.mf-photo != '' %}
 	    	{% include insta.html %}
