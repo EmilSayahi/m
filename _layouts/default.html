@@ -8,10 +8,10 @@
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
 {% endif %}
-{% if page.microblog == false and page.url != "/" %}
+{% if page.title and page.url != "/" %}
   <title>{{ site.name }} - {{ page.title }}</title>
 {% endif %}
-{% if page.sum != '' %}
+{% if page.sum %}
   <title>{{ site.name }} - {{ page.sum }}</title>
 {% else %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
