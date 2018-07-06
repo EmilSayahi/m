@@ -13,7 +13,7 @@
                 {% if post.mf-photo %}
 		<a href="{{ post.mf-syndication }}"><img src="{{ post.mf-photo }}"></a>
 	    	{% endif %}
-		{% if page.mf-summary !+'' %}
+		{% if page.mf-summary != '' %}
 	    	{{ mf-summary }}
 	    	{% endif %}
                 
