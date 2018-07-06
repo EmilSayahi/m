@@ -8,14 +8,14 @@
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
 {% endif %}
+{% if page.sum != '' and page.title == '' %}
+  <title>{{ site.name }} - {{ page.sum }}</title>
+{% endif %}
 {% if page.title != '' and page.url != "/" %}
   <title>{{ site.name }} - {{ page.title }}</title>
 {% endif %}
 {% if page.title == '' and page.url != "/" %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
-{% endif %}
-{% if page.sum != '' and page.title == '' %}
-  <title>{{ site.name }} - {{ page.sum }}</title>
 {% endif %}
   
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
