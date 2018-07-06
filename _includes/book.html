@@ -3,3 +3,5 @@
 <img src="http://covers.openlibrary.org/b/isbn/{{ page.mf-read-of.properties.uid | remove: "isbn:" }}-L.jpg">
 <div class="ol_readapi_book" isbn="{{ page.mf-read-of.properties.uid | remove: "isbn:" }}"></div>
 {{ page.mf-summary }}
+{{ page.mf-read-of.properties.uid | remove: "isbn:" }}
+{{ page.mf-read-of.properties.uid }}
