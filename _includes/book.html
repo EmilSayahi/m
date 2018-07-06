@@ -1,46 +1,9 @@
-<html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-		var isbn = '{{ post.mf-read-of.properties.uid }}'
-        var bookurl = 'https://www.googleapis.com/books/v1/volumes?q=' + isbn
-        $.getJSON(bookurl, function(result){
-            $.each(result, function(i, field){
-                $("desc").html(field);
-                if(i == 'description'){
-                return false;
-                }
-            });
-        });
-});
-$(document).ready(function(){
-		var isbn = '{{ post.mf-read-of.properties.uid }}'
-        var bookurl = 'https://www.googleapis.com/books/v1/volumes?q=' + isbn
-        $.getJSON(bookurl, function(result){
-            $.each(result, function(i, field){
-                $("thumb").html(field);
-                if(i == 'thumbnail'){
-                return false;
-                }
-            });
-        });
-});
-</script>
+  <!-- The 'readapi_automator.js' script requires jQuery -->
+  <script src="http://www.archive.org/includes/jquery-1.6.1.min.js"></script>
 </head>
-<body>
-
-
-
 <section>
-```
-<desc></desc>
-```
+	{% include image.html image="http://covers.openlibrary.org/b/isbn/{{ post.mf-read-of.properties.uid | remove: "isbn:" }}-L.jpg" %}
+	<div class="ol_readapi_book" isbn="{{ post.mf-read-of.properties.uid | remove: "isbn:" }}"></div>
+	{{ post.mf-summary }}
 </section>
-
-<section>
-{% include image.html image="<thumb></thumb>" %}
-</section>
-
-</body>
-</html>
