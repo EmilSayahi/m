@@ -1,8 +1,5 @@
 <!-- The 'readapi_automator.js' script requires jQuery -->
 <script src="http://www.archive.org/includes/jquery-1.6.1.min.js"></script>
-<img src="http://covers.openlibrary.org/b/isbn/{{ page.mf-read-of.properties.uid | remove: "isbn:" }}-L.jpg">
-<div class="ol_readapi_book" isbn="{{ page.mf-read-of.properties.uid | remove: "isbn:" }}"></div>
+<img src="http://covers.openlibrary.org/b/isbn/{{ page.mf-summary | split: ' ' | last | remove: '"]' }}-L.jpg">
+<div class="ol_readapi_book" isbn="{{ page.mf-summary | split: ' ' | last | remove: '"]' }}"></div>
 {{ page.mf-summary }}
-{{ page.mf-summary | split: ' ' | last }}
-{{ page.mf-read-of.properties.uid | remove: "isbn:" }}
-{{ page.mf-read-of.properties.uid }}
