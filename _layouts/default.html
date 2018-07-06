@@ -11,10 +11,12 @@
   <title>{{ site.name }} - {{ page.title }}</title>
   
 {% elsif page.title == '' and page.url != "/" %}
+  {% if page.sum == '' %}
   <title>{{ site.name }} - {{ page.content | strip_html }}</title>
-  
-{% elsif page.sum != '' %}
+  {% else %}
   <title>{{ site.name }} - {{ page.sum }}</title>
+  {% endif %}
+  
   
 {% endif %}
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
