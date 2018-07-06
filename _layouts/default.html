@@ -15,7 +15,7 @@
   <title>{{ site.name }} - {{ page.sum }}</title>
 {% endif %}
 {% if page.sum == nil and page.title == '' %}
-  <title>{{ site.name }} - {{ page.content | strip_html }}</title>
+  <title>{{ site.name }} - {{ page.excerpt | strip_html }}</title>
 {% endif %}
   
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
