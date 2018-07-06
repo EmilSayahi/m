@@ -4,17 +4,9 @@
             <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}" class="u-url"></a>
             <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}"><h2 class="e-content">
                 
-		{% elsif post.microblog == true %}
-                {{ post.content }}
-                
-                {% elsif post.microblog == false %}
-                {{ post.title }}
-                {{ post.content }}
-                
-		{% else %}
 		{{ post.title }}
                 {{ post.content }}
-		{% endif %}
+		    
                 {% if post.mf-photo %}
 		<a href="{{ post.mf-syndication }}"><img src="{{ post.mf-photo }}"></a>
 	    	{% endif %}
