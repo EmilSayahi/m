@@ -8,7 +8,7 @@
 {% if page.url == "/" %}
   <title>{{ site.name }}</title>
 {% endif %}
-{% if page.title != '' and page.url != "/" %}
+{% if page.microblog == false and page.url != "/" %}
   <title>{{ site.name }} - {{ page.title }}</title>
 {% endif %}
 {% if page.sum != '' %}
