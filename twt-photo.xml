@@ -13,6 +13,8 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:50 %}
+    {% if post.mf-syndication contains "foursquare.com" %}
+    {% else %}
     {% if post.mf-photo != nil or include.post.image != nil %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
@@ -28,6 +30,7 @@ layout: null
         {% endfor %}
       </item>
      {% endif %}
+    {% endif %}
     {% endfor %}
   </channel>
 </rss>
