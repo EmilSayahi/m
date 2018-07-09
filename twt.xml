@@ -13,7 +13,7 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:50 %}
-    {% if post.mf-photo == nil and post.include.image == nil %}
+    {% if post.mf-photo == "" and post.include.image == "" %}
     <p></p>
       <item>
         <title>{{ post.title | xml_escape }}</title>
