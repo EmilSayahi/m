@@ -634,7 +634,7 @@ h2.month {
 	#post-meta { margin-top: 60px; }
 
 	#title { font-size: 17px; }
-	#post-list .dates { display: none; }
+	//#post-list .dates { display: none; }
 
 	#post-list-footer { margin-top: 20px; padding-top: 40px; }
 
