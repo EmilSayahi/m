@@ -1,8 +1,8 @@
 <ul id="post-list">
     {% for post in paginator.posts %}
         <li class="h-entry">
-            <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}" class="u-url"></a>
-            <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}"><h2 class="e-content">
+            
+            <!-- <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}"><h2 class="e-content"> -->
                 
 		{% if page.microblog == false %}
 		{{ post.title }}
@@ -14,8 +14,9 @@
 	    	{{ post.mf-summary }}
 	    	{% endif %}
                 
-                </h2></a>
-            <aside class="dates"><time datetime="{{ post.date }}" class="dt-published"><span class="arrow">→</span> {{ post.date | date:"%I:%M %p, %b %d" }}</time></aside>
+                </h2>
+		<!-- </a> -->
+            <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' | remove: '.html' }}" class="u-url"><aside class="dates"><time datetime="{{ post.date }}" class="dt-published"><span class="arrow">→</span> {{ post.date | date:"%I:%M %p, %b %d" }}</time></aside></a>
         </li>
     {% endfor %}
 </ul>
