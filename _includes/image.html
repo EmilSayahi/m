@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
-{% if include.link != '' %}
+{% if include.link == '' %}
+{% else %}
 <a href="{{ include.link }}">
 {% endif %}
 <img class="{{ include.filter }}" src="{{ include.image }}" width="{{ include.width }}" height="{{ include.height }}" alt="{{ include.alt }}" >
-{% if include.link != '' %}
+{% if include.link == '' %}
+{% else %}
 </a>
 {% endif %}
