@@ -11,4 +11,4 @@ microblog: true
 layout: post
 ---
 mt. fuji reflected on rice paddies
-[{% include image.html image="https://i.redd.it/6om03v7rih211.jpg" alt="6om03v7rih211.jpg" %}](https://www.reddit.com/r/pics/comments/8p6emx/mount_fuji_japan_reflected_in_rice_paddies/)
+{% include image.html image="https://i.redd.it/6om03v7rih211.jpg" alt="6om03v7rih211.jpg" link="https://www.reddit.com/r/pics/comments/8p6emx/mount_fuji_japan_reflected_in_rice_paddies/" %}
