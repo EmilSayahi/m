@@ -1,4 +1,4 @@
-{% for item in page.mf-photo %}
-<a href="{{ page.mf-syndication | replace: 'foursquare.com/forward/', 'foursquare.com/emilsayahi/' | remove: '"]' | remove: '["' }}"><img src="{{ page.mf-photo }}"></a>
+{% for i in page.mf-photo %}
+<a href="{{ page.mf-syndication | replace: 'foursquare.com/forward/', 'foursquare.com/emilsayahi/' | remove: '"]' | remove: '["' }}"><img src="{{ page.mf-photo[i] }}"></a>
 <a href='https://www.google.com/maps/search/{{ page.mf-location | remove: "geo:" | remove: '"]' | remove: '["' }}' target="_blank" class="small">{{ page.mf-place_name }}</a>
 {% endfor %}
