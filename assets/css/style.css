@@ -358,6 +358,12 @@ img {
 	border-radius: 3px;
 }
 
+iframe {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 3px;
+}
+
 /* Made with Cactus Badge */
 #badge {
 	position: absolute;
