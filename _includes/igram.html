@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		var id = '{{ include.id }}'
+		var gramslsh = encodeURI(id);
+        var gramurl = 'https://noembed.com/embed?url=' + gramslsh + '.json'
+        $.getJSON(gramurl, function(result){
+            $.each(result, function(i, field){
+                $("gram").html(field);
+                if(i == 'html'){
+                return false;
+                }
+            });
+        });
+//$("div").prepend(gramurl);
+});
+</script>
+</head>
+<body>
+
+
+
+<gram></gram>
+
+</body>
+</html>
