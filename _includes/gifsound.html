@@ -89,7 +89,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
 document.getElementById('play-button').onclick = function() {
 
    document.getElementById('html').innerHTML='<iframe id="gifsound" src= "' + 'https://liech.ga/gifsound/?{{ include.gif-type }}={{ include.gif-uri }}&{{ include.sound-type }}={{ include.sound-id }}"' + 'style="position:relative; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;" frameborder="0" scrolling="no"></iframe>';
-	iFrameResize({log:true,autoResize:true,sizeWidth:true,interval:-32,heightCalculationMethod:'grow'}, '#gifsound');
+	iFrameResize({log:true,autoResize:true,sizeWidth:true,interval:16,heightCalculationMethod:'grow'}, '#gifsound');
 };
 </script>
 <script>iFrameResize({log:true,autoResize:true,sizeWidth:true,interval:-32,heightCalculationMethod:'grow'}, '#gifsound');</script>
