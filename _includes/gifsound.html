@@ -1,34 +1,6 @@
 <head>
     <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css"> 
 	<script src="https://liech.ga/assets/iframeResizer.min.js"></script>
-	<script>iFrameResize({log:true,autoResize:true,sizeWidth:true,interval:-32,heightCalculationMethod:'grow'}, '#gifsound');</script>
-	<!--
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<script src="https://liech.ga/assets/seamless.parent.min.js"></script>
-	<script type="text/javascript">
-  window.onload = function() {
-    // Turns the iframe into a seamless iframe.
-    window.seamless(document.getElementById('gifsound'));
-  };
-</script>
-<script type="application/javascript">
-
-function resizeIFrameToFitContent( iFrame ) {
-
-    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
-    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-}
-
-window.addEventListener('DOMContentLoaded', function(e) {
-
-    var iframes = document.querySelectorAll("iframe");
-    for( var i = 0; i < iframes.length; i++) {
-        resizeIFrameToFitContent( iframes[i] );
-    }
-} );
-
-</script>
--->
 <style>
 .gif-thumbnail {
   position: relative;
@@ -54,32 +26,6 @@ window.addEventListener('DOMContentLoaded', function(e) {
 </style>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<!--
-<script type="text/javascript">
-  window.onload = function() {
-    // Turns the iframe into a seamless iframe.
-    window.seamless(document.getElementById('myiframe'));
-  };
-</script>
-
-<script type="application/javascript">
-
-function resizeIFrameToFitContent( iFrame ) {
-
-    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
-    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-}
-
-window.addEventListener('DOMContentLoaded', function(e) {
-
-    var iframes = document.querySelectorAll("iframe");
-    for( var i = 0; i < iframes.length; i++) {
-        resizeIFrameToFitContent( iframes[i] );
-    }
-} );
-
-</script>
--->
 <div id="html">
 <div class="gif-thumbnail" id="play-button">
     <img src="{{ include.gif-thumb }}" alt="GIF thumbnail" class="moon" />
@@ -92,4 +38,3 @@ document.getElementById('play-button').onclick = function() {
 	iFrameResize({log:true,autoResize:true,sizeWidth:true,interval:16,heightCalculationMethod:'grow'}, '#gifsound');
 };
 </script>
-<script>iFrameResize({log:true,autoResize:true,sizeWidth:true,interval:-32,heightCalculationMethod:'grow'}, '#gifsound');</script>
