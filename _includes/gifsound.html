@@ -1,10 +1,11 @@
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css"> 
-	<script src="https://liech.ga/assets/seamless.parent.min.js"></script>
 	<script src="https://liech.ga/assets/iframeResizer.min.js"></script>
 	<script>iFrameResize({log:true})</script>
-	<!--<script type="text/javascript">
+	<!--
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script src="https://liech.ga/assets/seamless.parent.min.js"></script>
+	<script type="text/javascript">
   window.onload = function() {
     // Turns the iframe into a seamless iframe.
     window.seamless(document.getElementById('gifsound'));
@@ -41,8 +42,6 @@ window.addEventListener('DOMContentLoaded', function(e) {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    content: '<i class="fas fa-play-circle"></i>';
-    font-family: FontAwesome;
     font-size: 100px;
     color: #fff;
     opacity: .8;
@@ -93,4 +92,4 @@ document.getElementById('play-button').onclick = function() {
 
 };
 </script>
-<script>iFrameResize({log:true})</script>
+<script>iFrameResize({log:true,heightCalculationMethod:'grow'})</script>
