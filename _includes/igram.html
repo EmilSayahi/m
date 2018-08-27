@@ -28,4 +28,12 @@ $(document).ready(function(){
 </body>
 </html>
 -->
-<iframe height="576" src="{{ page.mf-syndication | remove: "www." | remove: '"]' | remove: '["' | append: "embed" }}"></iframe>
+<head>
+    	<link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css"> 
+	<script src="https://liech.ga/assets/iframeResizer.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<script>
+	document.getElementById('html').innerHTML='<iframe id="igram" src="{{ page.mf-syndication | remove: "www." | remove: '"]' | remove: '["' | append: "embed" }}" style="position:relative; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;" frameborder="0" scrolling="no"></iframe>';
+	iFrameResize({log:true,autoResize:true,sizeWidth:true,interval:16,heightCalculationMethod:'grow'}, '#igram');
+</script>
