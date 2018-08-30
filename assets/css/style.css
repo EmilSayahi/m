@@ -157,19 +157,6 @@ nav.main-nav a.cta {
 	border-radius: 50%;
 }
 
-.emoji {
-	width: 5%;
-	height: 5%;
-	border-radius: 0px;
-	line-height: 1.7;
-	font-size: 120%;
-	/*! margin-bottom: 20px; */
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-	padding: 0;
-}
-
 /* Typography */
 /*Accent color*/
 a,
