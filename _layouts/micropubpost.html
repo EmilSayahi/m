@@ -43,6 +43,15 @@ archive: true
     </div>
 {% endif %}
 
+
+<!-- Commento comments -->
+{% if site.commento %}
+    <div class="archive readmore">
+        <h3>Comments</h3>
+        {% include commento.html %}
+    </div>
+{% endif %}
+
 <!-- Archive post list -->
 {% if page.archive %}
 <!--
