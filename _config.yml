@@ -5,8 +5,9 @@ highlighter: rouge
 
 domain_# - name: "https://liech.ga/m"
 #google_analytics: ''
-disqus: true
+disqus: false
 disqus_short# - name: 'emilsayahi'
+commento: true
 
 defaults:
     -
