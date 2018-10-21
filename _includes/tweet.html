@@ -13,14 +13,14 @@
 	}
 $(document).ready(function(){
 	var elemName = randomString(5);
-	$("{{ include.id | url_encode | escape | remove: "%" | strip }}").prepend("<" + elemName + "></" + elemName + ">");
+	//$("{{ include.id | url_encode | escape | remove: "%" | remove: "." | strip }}").prepend("<" + elemName + "></" + elemName + ">");
 
 		var id = '{{ include.id }}'
 		var twtslsh = encodeURI(id);
         var twturl = 'https://noembed.com/embed?url=' + twtslsh + '.json'
         $.getJSON(twturl, function(result){
             $.each(result, function(i, field){
-                $(elemName).html(field);
+                $('{{ include.id | url_encode | escape | remove: "%" | remove: "." | strip }}').html(field);
                 if(i == 'html'){
                 return false;
                 }
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
 
-<{{ include.id | url_encode | escape | remove: "%" | strip }}></{{ include.id | url_encode | escape | remove: "%" | strip }}>
+<{{ include.id | url_encode | escape | remove: "%" | remove: "." | strip }}></{{ include.id | url_encode | escape | remove: "%" | remove: "." | strip }}>
 
 </body>
 </html>
