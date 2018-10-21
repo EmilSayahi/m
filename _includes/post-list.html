@@ -6,12 +6,18 @@
                 
 		{% if page.microblog == false %}
 		{{ post.title }}
+		<post-body>
                 {{ post.content }}
+		</post-body>
 		{% else %}
+		<post-body>
 		{{ post.content }}
+		</post-body>
 		{% endif %}
 		{% if post.mf-summary != nil %}
+		<post-body>
 	    	{{ post.mf-summary }}
+		</post-body>
 	    	{% endif %}
                 
                 </h2>
