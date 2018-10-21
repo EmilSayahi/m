@@ -13,7 +13,7 @@
 	}
 $(document).ready(function(){
 	var elemName = randomString(5);
-	$("body").prepend("<" + elemName + "></" + elemName + ">");
+	$('<section id="post-body e-content">').prepend("<" + elemName + "></" + elemName + ">");
 
 		var id = '{{ include.id }}'
 		var twtslsh = encodeURI(id);
