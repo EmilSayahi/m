@@ -11,14 +11,14 @@ archive: true
         <h2 class="headline"><time class="dt-published" datetime="{{ page.date }}">{{ page.date | date:"%B %-d, %Y" }}</time></h2>
     </header>
     <section id="post-body e-content">
-	        
+	    <post-body>
                 {{ content }}
 	    	    
 	    	{% if page.mf-summary != nil %}
 	    	{{ mf-summary }}
 	    	{% include book.html %}
 	    	{% endif %}
-	    
+	    </post-body>
     </section>
 </article>
 <footer id="post-meta" class="clearfix">
