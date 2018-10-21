@@ -13,7 +13,7 @@
 	}
 $(document).ready(function(){
 	var elemName = randomString(5);
-	$("{{ include.id | url_encode }}").prepend("<" + elemName + "></" + elemName + ">");
+	$("{{ include.id | url_encode | escape}}").prepend("<" + elemName + "></" + elemName + ">");
 
 		var id = '{{ include.id }}'
 		var twtslsh = encodeURI(id);
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
 
-<{{ include.id | url_encode }}></{{ include.id | url_encode }}>
+<{{ include.id | url_encode | escape}}></{{ include.id | url_encode | escape}}>
 
 </body>
 </html>
